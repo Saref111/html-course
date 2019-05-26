@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link href="css/css.css" rel="stylesheets">
+    <link href="css/css.css" rel="stylesheet">
     <title>Магазин Nёrd's</title>
 </head>
 <body>
@@ -45,7 +45,7 @@
                 <li class="catalog-item">
                     <img src="img/img-barbershop.jpg" alt="Barbershop" class="catalog-item-img">
                     <div class="catalog-item-info"><h3><a href="#" class="catalog-item-info-name"><span>Barbershop</span></a></h3>
-                    <span class="catalog-item-info-text">Сайт салоны красоты.Для мужчин, да.</span>
+                    <span class="catalog-item-info-text">Сайт салоны красоты. Для мужчин, да.</span>
                     <a href="" class="button">9900 руб.</a></div>
                 </li>
                 <li class="catalog-item">
@@ -68,29 +68,29 @@
                         крафтового кваса</span>
                     <a href="" class="button">9900 руб.</a></div>
                 </li>
-                <ul class="pagination-list">
-                    <li class="pagination-item pagination-item-current"><a>1</a></li>
-                    <li class="pagination-item"><a href="">2</a></li>
-                    <li class="pagination-item"><a href="">3</a></li>
-                    <li class="pagination-item"><a href="">Следующая</a></li>
-                </ul>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a href="">2</a></li>
+                <li class="pagination-item"><a href="">3</a></li>
+                <li class="pagination-item"><a href="">Следующая</a></li>
             </ul>
         </section>
     </main>
     <footer class="footer-main">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-1">
-             <img src="img/map.jpg" alt="Карта">
+            <img src="img/map.jpg" alt="Наш адресс: 191186, Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, тел. +7 (812) 275-75-75ы">
             <p>Nerds Design studio</p>
             <p>191186, Санкт-Петербург,<br>ул. Большая Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="#" class="button">Напишите нам</a>
+            <button type="button" class="button">Напишите нам</button>
         </div>
         <div class="contacts-2">
             <ul class="socials-list">
-                <li><a href="" class="socials-item"><img src="img/vk-icon.svg" alt="VK"></a></li>
-                <li><a href="" class="socials-item"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-                <li><a href="" class="socials-item"><img src="img/insta-icon.svg" alt="Instagram"></a></li>
+                <li><a href="#" class="socials-item" aria-label="Страница в социальной сети Вконтакте"><img src="img/vk-icon.svg" alt="VK" ></a></li>
+                <li><a href="#" class="socials-item" aria-label="Страница в социальной сети Фейсбук"><img src="img/fb-icon.svg" alt="Facebook" ></a></li>
+                <li><a href="#" class="socials-item" aria-label="Страница в социальной сети Инстаграм"><img src="img/insta-icon.svg" alt="Instagram" ></a></li>
             </ul>
             <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>
             <p class="friendship-discount">Скидка 10% для друзей из социальных сетей.</p>
@@ -98,9 +98,25 @@
     </footer>
     <section class="contact-us">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <p class="contact-us">Напишите нам</p>
-        <!--Тут будут формы-->
-        <span class="close">X</span>
-    </section>   
+        <p class="contact-us-text">Напишите нам</p>
+        <form class="contact-us-form" method="POST" action="http://echo.htmlacademy.ru">
+            <fieldset>
+                <p class="contact-us-form-item">
+                    <label for="author-name">Ваше имя:</label>
+                    <input type="text" name="name" id="author-name" placeholder="Имя Фамилия" value="">
+                </p>
+                <p class="contact-us-form-item">
+                   <label for="author-email"> Ваш e-mail:</label>
+                    <input type="email" name="phone" id="author-email" placeholder="example@mail.com" value="">
+                </p>
+                <p class="contact-us-form-item">
+                    <label for="author-text">Текст письма:</label>
+                    <textarea name="message" id="author-text" cols="30" rows="10" placeholder="В свободной форме" ></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </fieldset>
+        </form>
+        <button type="button" class="close" aria-label="Закрыть"></button>
+    </section>
 </body>
 </html>
