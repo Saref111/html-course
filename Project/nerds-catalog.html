@@ -24,7 +24,25 @@
         <header class="page-name"><h1>Магазин готовых шаблонов</h1></header>
         <section class="filtrs">
             <h2 class="visually-hidden">Фильтры товаров</h2>
-            <!--Тут будут формы фильтров-->
+            <form action="http://echo.htmlacademy.ru" method="get" class="filter">
+                <fieldset class="filter-option">
+                    <input type="range" min="0" max="20000" name="price-min">
+                    <span>От:</span><span>До:</span>
+                </fieldset>
+                <fieldset class="filter-option">
+                    <input checked type="radio" name="" id="">
+                    <input type="radio" name="" id="">
+                    <input type="radio" name="" id="">
+                </fieldset>
+                <fieldset class="filter-option">
+                    <input checked type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input checked type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                </fieldset>
+                <button type="submit" class="button"></button>
+            </form>
         </section>
         <div class="sorting">
             <h2 class="visually-hidden">Сортировка</h2>
