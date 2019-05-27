@@ -25,21 +25,27 @@
         <section class="filtrs">
             <h2 class="visually-hidden">Фильтры товаров</h2>
             <form action="http://echo.htmlacademy.ru" method="get" class="filter">
-                <fieldset class="filter-option">
-                    <input type="range" min="0" max="20000" name="price-min">
+                <div class="filter-option filter-option-range">
+                    <div class="range-line"></div>
                     <span>От:</span><span>До:</span>
+                </div>
+                <fieldset class="filter-option filter-option-grid">
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li><input class="visually-hidden filter-input filter-input-radio" checked type="radio" name="grid-type-group" id="grid-adaptive"><label for="grid-adaptive">Адаптивная</label></li>
+                        <li><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type-group" id="grid-fixed"><label for="grid-fixed">Фиксированная</label></li>
+                        <li><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type-group" id="grid-rubber"><label for="grid-rubber">Резиновая</label></li>
+                    </ul>
                 </fieldset>
-                <fieldset class="filter-option">
-                    <input checked type="radio" name="" id="">
-                    <input type="radio" name="" id="">
-                    <input type="radio" name="" id="">
-                </fieldset>
-                <fieldset class="filter-option">
-                    <input checked type="checkbox" name="" id="">
-                    <input type="checkbox" name="" id="">
-                    <input checked type="checkbox" name="" id="">
-                    <input type="checkbox" name="" id="">
-                    <input type="checkbox" name="" id="">
+                <fieldset class="filter-option filter-option-features">
+                    <legend>Особенности:</legend> 
+                    <ul>  
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" checked type="checkbox" name="slider" id="features-slider"><label for="features-slider">Слайдер</label></li>
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-block" id="features-features-block"><label for="features-features-block">Блок приимуществ</label></li>
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" checked type="checkbox" name="news" id="features-news"><label for="features-news">Новости</label></li>
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallerey" id="features-gallery"><label for="features-gallery">Галерея</label></li>
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="features-cart"><label for="features-cart">Корзина</label></li>
+                    </ul>
                 </fieldset>
                 <button type="submit" class="button"></button>
             </form>
