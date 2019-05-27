@@ -28,6 +28,7 @@
                 <div class="filter-option filter-option-range">
                     <div class="range-line"></div>
                     <span>От:</span><span>До:</span>
+                    <input type="range" multiple name="" id="">
                 </div>
                 <fieldset class="filter-option filter-option-grid">
                     <legend>Сетка:</legend>
@@ -50,15 +51,20 @@
                 <button type="submit" class="button">Показать</button>
             </form>
         </section>
-        <div class="sorting">
+        <section class="sorting">
             <h2 class="visually-hidden">Сортировка</h2>
             <span>Сортирвать</span>
             <ul class="sorting-list">
-                <li class="sorting-list-option">По цене</li>
-                <li class="sorting-list-option">По типу</li>
-                <li class="sorting-list-option">По названию</li>
+                <li class="sorting-list-option"><a href="" class="">По цене</a></li>
+                <li class="sorting-list-option"><a href="" class="">По типу</a></li>
+                <li class="sorting-list-option"><a href="" class="">По названию</a></li>
             </ul>
-        </div>
+            <span class="visually-hidden">Направление Сортировки</span>
+            <ul class="sorting-direction">
+                <li class="sorting-list-option"><a href="">По убыванию</a></li>
+                <li class="sorting-list-option"><a href="">По возрастанию</a></li>
+            </ul>
+        </section>
         <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
             <ul class="catalog-list">
