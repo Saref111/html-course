@@ -3,7 +3,7 @@
     src: url('fonts/roboto-bold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    
+
 }
 
 
@@ -26,4 +26,94 @@
     font-weight: normal;
     font-style: normal;
 
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #283136;
+    background-color: #ffffff;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.top, .page-name {
+    background-color: #eeeeee;
+}
+
+.main-nav {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+    
+}
+
+.site-nav a, 
+.user-nav a {
+    color: #000000;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+    color: #fb565a;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.8;
+}
+
+.site-nav a:active,
+.user-nav a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
+.current {
+    border-bottom: 2px solid #fb565a;
+}
+
+.button {
+    color: #ffffff;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+    color: #ffffff;
+    background-color: #e74246;
+}
+
+.button:active{
+    color: rgba(255,255,255,0.3);
+
+    background-color: #d7373b;
 }
