@@ -44,14 +44,24 @@ body {
     background-color: #ffffff;
 }
 
-
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    
+}
 
 
 a {
     text-decoration: none;
 }
 
-ul li {
+/*Шапка*/
+
+.site-nav li,
+.user-nav li {
     list-style: none;
 }
 
@@ -98,10 +108,21 @@ ul li {
     border-bottom: 2px solid #fb565a;
 }
 
+.features-list li {
+    list-style: none;
+}
+
+.features-name {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55px;
+}
+
 .button {
     color: #ffffff;
     line-height: 16px;
     text-transform: uppercase;
+    text-align: center;
 
     background-color: #fb565a;
 }
@@ -116,4 +137,73 @@ ul li {
     color: rgba(255,255,255,0.3);
 
     background-color: #d7373b;
+}
+
+/*Тело*/
+
+.services-list h3{
+    font-size: 24p;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.services-list li{
+    list-style: none;
+}
+
+/*Вставить общий селектор для .services-list .button */
+
+.services-list .button-green{
+    background-color: #00ca74;
+}
+
+.services-list .button-green:hover,
+.services-list .button-green:focus{
+    background-color: #00bc6c;
+}
+
+.services-list .button-green:active{
+    background-color: #00aa62;
+}
+
+.services-list .button-yellow{
+    background-color: #efc84a;
+}
+
+.services-list .button-yellow:hover,
+.services-list .button-yellow:focus{
+    background-color: #eab534;
+}
+
+.services-list .button-yellow:active{
+    background-color: #e5a722;
+}
+
+.studio-1 li,
+.studio-2 li{
+    list-style: none;
+}
+
+.studio-text-medium{
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+p.studio-list{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.studio-features-list .number{
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.studio-features-list .percent{
+    vertical-align: text-top;
+    font-size: 25px;
+    font-weight: 700;
 }
