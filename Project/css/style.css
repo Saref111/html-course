@@ -207,3 +207,62 @@ p.studio-list{
     font-size: 25px;
     font-weight: 700;
 }
+
+.costumers-list li{
+    list-style: none;
+}
+
+.costumers-list .costumers-link{
+    opacity: 0.2;
+}
+
+.costumers-list .costumers-link:hover,
+.costumers-list .costumers-link:focus{
+    opacity: 1;
+}
+
+.costumers-list .costumers-link:active{
+    opacity: 0.1;
+}
+
+.contacts-1 p:nth-of-type(1){
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts-1 p:not(:nth-of-type(1)){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color:#666666;
+}
+
+.socials-list li{
+    list-style: none;
+}
+
+.socials-list .socials-item{
+    background-color: #e1e1e1;
+}
+
+.socials-list .socials-item:hover,
+.socials-list .socials-item:focus{
+    background-color: #e74246;
+}
+
+.socials-item:active img{
+    opacity: 0.3;
+}
+
+p.friendship{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+p.friendship-discount{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
