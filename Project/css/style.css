@@ -225,6 +225,8 @@ p.studio-list{
     opacity: 0.1;
 }
 
+/*Футер*/
+
 .contacts-1 p:nth-of-type(1){
     font-weight: 700;
     font-size: 18px;
@@ -265,4 +267,48 @@ p.friendship-discount{
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+}
+
+/*Форма обратной связи*/
+
+.contact-us-text{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+p.contact-us-form-item label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+p.contact-us-form-item label+*{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    border: 2px solid #d7dcde;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+p.contact-us-form-item label+*::placeholder{
+    color: rgba(68, 68, 68 0.5);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+p.contact-us-form-item label+*:hover{
+    border-color: #b4b9bb;
+}
+
+
+p.contact-us-form-item label+*:focus{
+    border-color: #000000;
+}
+
+p.contact-us-form-item label+*:invalid{
+    border-color: #e74246;
+    color: #e74246;
 }

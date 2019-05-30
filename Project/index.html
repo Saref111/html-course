@@ -13,7 +13,7 @@
             <nav class="main-nav">
                 <a class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип компании Нёрдс"></a>
                 <ul class="site-nav">
-                    <li><a href="studio.html">Студия</a></li>
+                    <li><a class="current" href="studio.html">Студия</a></li>
                     <li><a href="costumers.html">Клиенты</a></li>
                     <li><a href="nerds-catalog.html">Магазин</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
@@ -127,11 +127,11 @@
         <form class="contact-us-form" method="POST" action="http://echo.htmlacademy.ru">
             <p class="contact-us-form-item">
                 <label for="author-name">Ваше имя:</label>
-                <input type="text" name="name" id="author-name" placeholder="Имя Фамилия" value="">
+                <input type="text" name="name" id="author-name" placeholder="Имя Фамилия" value="" autocomplete="cc-name">
             </p>
             <p class="contact-us-form-item">
                 <label for="author-email"> Ваш e-mail:</label>
-                <input type="email" name="phone" id="author-email" placeholder="example@mail.com" value="">
+                <input type="email" name="email" id="author-email" placeholder="example@mail.com" value="" autocomplete="email">
             </p>
             <p class="contact-us-form-item">
                 <label for="author-text">Текст письма:</label>
