@@ -29,10 +29,13 @@
         <section class="filters">
             <h2 class="visually-hidden">Фильтры товаров</h2>
             <form action="http://echo.htmlacademy.ru" method="get" class="filter">
-                <div class="filter-option filter-option-range">
+                <fieldset class="filter-option filter-option-price">
+                    <legend>Стоимость:</legend>
+                    <div class="filter-option filter-option-range">
                     <div class="range-line"></div>
                     <span>От:</span><span>До:</span>
                 </div>
+                </fieldset>
                 <fieldset class="filter-option filter-option-grid">
                     <legend>Сетка:</legend>
                     <ul>
@@ -56,15 +59,15 @@
         </section>
         <section class="sorting">
             <h2 class="visually-hidden">Сортировка</h2>
-            <span>Сортирвать</span>
+            <span>Сортирвать:</span>
             <ul class="sorting-list">
-                <li class="sorting-list-option"><a href="" class="">По цене</a></li>
+                <li class="sorting-list-option"><a class="current-option" href="" class="">По цене</a></li>
                 <li class="sorting-list-option"><a href="" class="">По типу</a></li>
                 <li class="sorting-list-option"><a href="" class="">По названию</a></li>
             </ul>
             <span class="visually-hidden">Направление Сортировки</span>
             <ul class="sorting-direction">
-                <li class="sorting-list-option"><a href="">По убыванию</a></li>
+                <li class="sorting-list-option"><a class="current-option" href="">По убыванию</a></li>
                 <li class="sorting-list-option"><a href="">По возрастанию</a></li>
             </ul>
         </section>

@@ -312,3 +312,67 @@ p.contact-us-form-item label+*:invalid{
     border-color: #e74246;
     color: #e74246;
 }
+
+/*Страница каталога товаров*/
+/*Фильтры*/
+.filter-option{
+    border: none;
+}
+
+.filter-option li,
+.sorting-direction li,
+.sorting-list li{
+    list-style: none;
+}
+
+.filter-option legend,
+.sorting>span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.sorting-list-option a{
+    color: #000000;
+    opacity: 0.3;
+}
+
+.sorting-list-option a:hover,
+.sorting-list-option a:focus{
+    opacity: 0.6;
+}
+
+.sorting-list-option a:active,
+.sorting-list-option a.current-option{
+    opacity: 1;
+}
+
+.sorting-direction a{
+    font-size: 0px;
+}
+
+.form-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #eeeeee;
+    border-radius: 2px;
+    border: none;
+}
+
+.form-button:hover,
+.form-button:focus{
+    background-color: #dfdfdf;
+}
+
+.form-button:active{
+    color: rgba(0, 0, 0, 0.3);
+
+    border-top: inset 2px #bfbfbf;
+}
+
+/*Каталог*/
+
