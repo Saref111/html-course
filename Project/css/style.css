@@ -330,11 +330,13 @@ p.contact-us-form-item label+*:invalid{
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .sorting-list-option a{
     color: #000000;
     opacity: 0.3;
+    text-transform: uppercase;
 }
 
 .sorting-list-option a:hover,
@@ -349,9 +351,12 @@ p.contact-us-form-item label+*:invalid{
 
 .sorting-direction a{
     font-size: 0px;
+    background-color: #000000;
+    display: inline-block;
+    border: 5px solid #000000;
 }
 
-.form-button{
+.gray-button{
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -363,16 +368,51 @@ p.contact-us-form-item label+*:invalid{
     border: none;
 }
 
-.form-button:hover,
-.form-button:focus{
+.gray-button:hover,
+.gray-button:focus{
     background-color: #dfdfdf;
 }
 
-.form-button:active{
+.gray-button:active{
     color: rgba(0, 0, 0, 0.3);
 
-    border-top: inset 2px #bfbfbf;
+    box-shadow: inset 0 2px 0 0 #bfbfbf;
 }
 
 /*Каталог*/
 
+.catalog-list li{
+    list-style: none;
+}
+
+.catalog-item-info-name{
+    color: #000000;
+}
+
+.catalog-item-info-name:hover,
+.catalog-item-info-name:focus{
+    color: #fb565a;
+}
+
+.catalog-item-info-name:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item-info-name span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.pagination-list li{
+    list-style: none;
+}
+
+.pagination-item-current{
+    background-color: #ffffff;
+    box-shadow: inset 2px 2px 0 0 #eeeeee,
+                inset -2px -2px 0 0#eeeeee;
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */            
+}
