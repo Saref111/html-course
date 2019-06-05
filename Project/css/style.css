@@ -42,6 +42,9 @@ body {
 
     color: #283136;
     background-color: #ffffff;
+    background-image: url('../img/nerds-index.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .visually-hidden {
@@ -66,7 +69,8 @@ a {
 }
 
 .top, .page-name {
-    background-color: #eeeeee;
+    
+
 }
 
 .main-nav {
@@ -116,6 +120,7 @@ a {
     font-weight: 700;
     font-size: 55px;
     line-height: 55px;
+    
 }
 
 .button {
@@ -142,9 +147,10 @@ a {
 /*Тело*/
 
 .services-list h3{
-    font-size: 24p;
+    font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .services-list li{
@@ -416,3 +422,57 @@ p.contact-us-form-item label+*:invalid{
     pointer-events: none; /* делаем ссылку некликабельной */
     cursor: default;  /* устанавливаем курсор в виде стрелки */            
 }
+
+/*Заметка сетки*/
+
+
+body { 
+    width: 1440px;
+}
+
+.header-main{
+    min-height: 132px;
+    margin: 0;
+}
+
+.main-nav{
+    display: flex;
+   
+    
+}
+
+.main-header-logo{
+    width: 160px;
+    height: 65px;
+    margin-left: 140px;
+    margin-top: 50px;
+    
+}
+
+.site-nav{ 
+   width: 440px;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-left: 200px;
+   margin-top: 75px;
+}
+
+.user-nav{
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+
+.features{
+    margin-bottom: 80px;
+    /*Временно для сетки*/
+    min-height: 415px;
+    
+}
+
+
