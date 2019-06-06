@@ -475,4 +475,19 @@ body {
     
 }
 
+.services-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 40px; 
+    min-height: 430px;
+}
+
+.services-list li{
+    width: 300px;
+    margin-left: 100px;
+    padding-top: 145px;
+}
+
+
 
