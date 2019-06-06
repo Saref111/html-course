@@ -68,11 +68,6 @@ a {
     list-style: none;
 }
 
-.top, .page-name {
-    
-
-}
-
 .main-nav {
     text-transform: uppercase;
     font-weight: 500;
@@ -194,6 +189,7 @@ a {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
+    letter-spacing: 0;
 }
 
 p.studio-list{
@@ -466,6 +462,7 @@ body {
     padding: 0;
     margin-left: 200px;
     margin-top: 75px;
+    
 }
 
 .features{
@@ -489,5 +486,30 @@ body {
     padding-top: 145px;
 }
 
+section.studio,
+.studio-1,
+.studio-2,
+.studio-1 *,
+.studio-2 *{
+    margin: 0;
+    padding: 0;
+} 
 
+section.studio{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 65px;
+    padding-right: 65px;
+}
 
+.studio-1{
+    width: 660px;
+}
+
+.studio-2{
+    width: 360px;
+}
+
+.studio-1 p{
+    white-space: nowrap;
+}
