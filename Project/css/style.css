@@ -61,6 +61,11 @@ a {
     text-decoration: none;
 }
 
+.container *{
+    padding: 0;
+    margin: 0;
+}
+
 /*Шапка*/
 
 .site-nav li,
@@ -582,4 +587,95 @@ section.studio{
 
 .friendship{
     margin-left: 140px;
+}
+
+.contact-us,
+.contact-us *{
+    padding: 0;
+    margin: 0;
+}
+
+.contact-us{
+    width: 960px;
+    
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+/*Сетка для внутреней странциы каталога*/
+
+.inner-page{
+    background-image: url(../img/nerds-catalog.jpg);
+    background-repeat: no-repeat;
+}
+
+.inner-page .container{
+    min-height: 2445px;
+}
+
+.page-name-wrapper{
+    min-height: 220px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    
+}
+
+.page-name {
+    line-height: 30px;
+}
+
+.catalog-container-wrapper{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.filters{
+    width: 260px;
+    min-height: 775px;
+}
+
+.sorting-catalog-items-wrapper{
+    width: 760px;
+}
+
+.sorting li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sorting-list,
+.sorting-direction,
+.sorting{
+    display: flex;
+}
+
+.sorting span{
+    width: 160px;
+}
+
+.sorting-list{
+    width: 300px;
+    margin-left: 240px;
+    padding-top: 5px;
+}
+
+.sorting-list li:not(:last-child){
+    margin-right: 20px;
+}
+
+.sorting-direction{
+    margin-left: 15px;
+    width: 45px;
+    justify-content: space-between;
 }
