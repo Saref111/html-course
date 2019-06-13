@@ -234,6 +234,10 @@ p.studio-list{
 
 /*Футер*/
 
+.contacts-1{
+    position: relative;
+}
+
 .contacts-1 p:nth-of-type(1){
     font-weight: 700;
     font-size: 18px;
@@ -552,7 +556,7 @@ section.studio{
     width: 320px;
     min-height: 310px;
     position: absolute;
-    top: 1900px;
+    top: 50px;
     left: 140px;
     background-color: #ffffff;
 }
@@ -611,7 +615,7 @@ section.studio{
 }
 
 .inner-page .container{
-    min-height: 2445px;
+    min-height: 2438px;
 }
 
 .page-name-wrapper{
@@ -632,7 +636,7 @@ section.studio{
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 55px;
-    margin-bottom: 55px;
+    margin-bottom: 0;
     display: flex;
     padding-right: 20px;
     padding-left: 20px;
