@@ -34,6 +34,7 @@
 body {
     margin: 0;
     padding: 0;
+    width: 1440px;
 
     font-family: 'Roboto', "Arial", sans-serif;
     font-weight: 400;
@@ -73,16 +74,32 @@ a {
     list-style: none;
 }
 
+.site-nav{ 
+    width: 440px;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+    margin-top: 75px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+ }
+
 .main-nav {
     text-transform: uppercase;
     font-weight: 500;
     line-height: 30px;
     color: #000000;
     
+    display: flex;
+   
 }
 
 .site-nav a, 
 .user-nav a {
+    display: inline-block;
     color: #000000;
 }
 
@@ -112,15 +129,48 @@ a {
     border-bottom: 2px solid #fb565a;
 }
 
+.features-list{
+    position: relative;
+    
+}
+
 .features-list li {
     list-style: none;
+    position: absolute;
+    width: 1440px;
+    min-height: 415px;
+    padding-left: 140px;
+    padding-top: 60px;
+}
+
+.features-list li:first-child{
+    background-image: url(../img/slide1.png);
+    background-position: 570px 0;
+    background-repeat: no-repeat;
+}
+
+.features-list li:nth-child(2){
+    background-image: url(../img/slide2.png);
+    background-position: 570px 0;
+    background-repeat: no-repeat;
+}
+
+.features-list li:nth-child(3){
+    background-image: url(../img/slide3.png);
+    background-position: 570px 0;
+    background-repeat: no-repeat;
 }
 
 .features-name {
     font-weight: 700;
     font-size: 55px;
     line-height: 55px;
-    
+    margin-bottom: 26px;
+
+}
+
+.features-text{
+    margin-bottom: 37px;
 }
 
 .button {
@@ -146,17 +196,52 @@ a {
 
 /*Тело*/
 
+.services-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 40px; 
+    min-height: 430px;
+}
+
 .services-list h3{
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+
+    margin-bottom: 15px;
 }
 
 .services-list li{
     list-style: none;
+
+    width: 300px;
+    margin-left: 100px;
+    padding-top: 170px;
 }
 
+.services-list li:first-child{
+    background-image: url(../img/illustration-1.png);
+    background-repeat: no-repeat;
+    
+}
+
+.services-list li:nth-child(2){
+    background-image: url(../img/illustration-2.png);
+    background-repeat: no-repeat;
+    
+}
+
+.services-list li:nth-child(3){
+    background-image: url(../img/illustration-3.png);
+    background-repeat: no-repeat;
+    
+}
+
+.services-list p{
+    margin-bottom: 31px;
+}
 /*Вставить общий селектор для .services-list .button */
 
 .services-list .button-green{
@@ -190,20 +275,70 @@ a {
     list-style: none;
 }
 
+section.studio,
+.studio-1,
+.studio-2,
+.studio-1 *,
+.studio-2 *{
+    margin: 0;
+    padding: 0;
+} 
+
 .studio-text-medium{
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
     letter-spacing: 0;
+    margin-bottom: 33px;
+}
+
+.studio-text{
+    margin-bottom: 40px;
 }
 
 p.studio-list{
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    text-transform: uppercase;
+    margin-left: 3px;
 }
 
-.studio-features-list .number{
+.studio-services-list{
+    margin-top: 23px;
+}
+
+.studio-services-list li:first-child{
+    
+    margin-left: 37px;
+    margin-bottom: 23px;
+}
+
+.studio-services-list li:nth-child(2){
+    margin-bottom: 23px;
+    margin-left: 37px;
+}
+
+.studio-services-list li:nth-child(3){
+    
+    margin-left: 37px;
+}
+
+.studio-services-list li{
+    position: relative;
+}
+
+.studio-services-list li::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    top: 11px;
+    left: -34px;
+}
+
+ .studio-features-list .number{
     font-size: 45px;
     line-height: 40px;
     font-weight: 700;
@@ -213,6 +348,28 @@ p.studio-list{
     vertical-align: text-top;
     font-size: 25px;
     font-weight: 700;
+}
+
+
+
+section.studio{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.studio-1{
+    width: 660px;
+    padding-top: 71px;
+}
+
+.studio-2{
+    width: 360px;
+}
+
+.studio-1 p{
+    white-space: nowrap;
 }
 
 .costumers-list li{
@@ -232,6 +389,28 @@ p.studio-list{
     opacity: 0.1;
 }
 
+.costumers,
+.costumers *{
+    padding: 0;
+    margin: 0;
+}
+
+.costumers{
+    padding-right: 20px;
+}
+
+.costumers-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1160px;
+    min-height: 180px;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    
+}
 /*Футер*/
 
 .contacts-1{
@@ -431,20 +610,14 @@ p.contact-us-form-item label+*:invalid{
 /*Заметка сетки*/
 
 
-body { 
-    width: 1440px;
-}
+
 
 .header-main{
     min-height: 132px;
     margin: 0;
 }
 
-.main-nav{
-    display: flex;
-   
-    
-}
+
 
 .main-header-logo{
     width: 160px;
@@ -454,16 +627,7 @@ body {
     
 }
 
-.site-nav{ 
-   width: 440px;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   margin-left: 200px;
-   margin-top: 75px;
-}
+
 
 .user-nav{
     width: 180px;
@@ -474,6 +638,26 @@ body {
     
 }
 
+.user-nav .login-link{
+    display:inline-block;
+    width: 95px;
+    padding-left: 85px;
+    position: relative;
+    
+}
+
+.login-link::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    left: 45px;
+    top: 8px;
+}
+
 .features{
     margin-bottom: 80px;
     /*Временно для сетки*/
@@ -481,70 +665,15 @@ body {
     
 }
 
-.services-list{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    padding-left: 40px; 
-    min-height: 430px;
-}
 
-.services-list li{
-    width: 300px;
-    margin-left: 100px;
-    padding-top: 145px;
-}
 
-section.studio,
-.studio-1,
-.studio-2,
-.studio-1 *,
-.studio-2 *{
-    margin: 0;
-    padding: 0;
-} 
 
-section.studio{
-    display: flex;
-    justify-content: space-around;
-    padding-left: 65px;
-    padding-right: 65px;
-}
 
-.studio-1{
-    width: 660px;
-}
 
-.studio-2{
-    width: 360px;
-}
 
-.studio-1 p{
-    white-space: nowrap;
-}
 
-.costumers,
-.costumers *{
-    padding: 0;
-    margin: 0;
-}
 
-.costumers{
-    padding-right: 20px;
-}
 
-.costumers-list{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 1160px;
-    min-height: 180px;
-    margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-    
-}
 
 .footer-main,
 .footer-main *{
@@ -619,7 +748,8 @@ section.studio{
 }
 
 .page-name-wrapper{
-    min-height: 220px;
+    min-height: 180px;
+    padding-bottom: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
