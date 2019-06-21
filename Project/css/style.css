@@ -296,7 +296,7 @@ section.studio,
     margin-bottom: 40px;
 }
 
-p.studio-list{
+.studio-1 .studio-list{
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -348,6 +348,7 @@ p.studio-list{
     vertical-align: text-top;
     font-size: 25px;
     font-weight: 700;
+    
 }
 
 
@@ -366,10 +367,41 @@ section.studio{
 
 .studio-2{
     width: 360px;
+    padding-top: 38px;
 }
 
 .studio-1 p{
     white-space: nowrap;
+}
+
+.studio-2 img{
+    margin-bottom: 28px ;
+}
+
+.studio-2 .studio-list{
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.studio-features-list{
+    display: flex;
+    padding-top: 38px;
+}
+
+.studio-features-list li:first-child{
+    margin-right: 15px;
+}
+
+.studio-features-list li:nth-child(2){
+    margin-right: 25px;
+}
+
+li .number{
+    margin-bottom: 19px;
+}
+
+li .feature{
+    line-height: 18px;
 }
 
 .costumers-list li{
