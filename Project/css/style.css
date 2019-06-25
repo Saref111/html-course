@@ -406,7 +406,30 @@ li .feature{
 
 .costumers-list li{
     list-style: none;
+    position: relative;
 }
+
+.costumers-list li:nth-child(1){
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.costumers-list li:nth-child(2){
+    margin-top: 8px;
+    margin-left: 96px;
+}
+
+.costumers-list li:nth-child(3){
+    margin-top: 5px;
+    margin-left: 105px;
+}
+
+.costumers-list li:nth-child(4){
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+
 
 .costumers-list .costumers-link{
     opacity: 0.2;
@@ -434,14 +457,37 @@ li .feature{
 .costumers-list{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    
     width: 1160px;
     min-height: 180px;
-    margin-top: 75px;
+    margin-top: 78px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
     
+}
+
+.costumers-list li:not(:last-child)::after{
+    content:"";
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+    position: absolute;
+}
+
+.costumers-list li:nth-child(1)::after{
+    top: 0px;
+    right: -52px;
+}
+
+.costumers-list li:nth-child(2)::after{
+    top: 17px;
+    right: -47px;
+}
+
+.costumers-list li:nth-child(3)::after{
+    top: 0px;
+    right: -57px;
 }
 /*Футер*/
 
