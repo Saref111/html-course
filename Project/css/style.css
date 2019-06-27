@@ -33,6 +33,8 @@
 
 body {
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     width: 1440px;
 
@@ -43,9 +45,7 @@ body {
 
     color: #283136;
     background-color: #ffffff;
-    background-image: url('../img/nerds-index.jpg');
-    background-repeat: no-repeat;
-    background-size: auto;
+    
 }
 
 .visually-hidden {
@@ -68,6 +68,10 @@ a {
 }
 
 /*Шапка*/
+
+div.top{
+    background-color: #eeeeee;
+}
 
 .site-nav li,
 .user-nav li {
@@ -139,7 +143,7 @@ a {
     display: flex;
     position: absolute;
     justify-content: space-between;
-    top: 430px;
+    top: 315px;
     left: 677px;
     z-index: 10;
 }
@@ -546,6 +550,35 @@ li .feature{
     top: 0px;
     right: -57px;
 }
+
+section.services,
+
+section.costumers{
+    position: relative;
+}
+
+section.services::after,
+section.costumers::before,
+section.costumers::after{
+    content: "";
+    width: 1160px;
+    height: 2px;
+    position: absolute;
+    background-color: #eeeeee;
+    left: 140px;
+    
+}
+
+section.services::after{
+    bottom: 4px;
+}
+section.costumers::before{
+    top: -4px;
+}
+
+section.costumers::after{
+    top: 180px;
+}
 /*Футер*/
 
 
@@ -828,7 +861,7 @@ p.contact-us-form-item label+*:invalid{
     /*Временно для сетки*/
     min-height: 415px;
     /*margin-top: 17px;*/
-    
+    position: relative;
 }
 
 
@@ -887,6 +920,7 @@ p.contact-us-form-item label+*:invalid{
 
 .friendship{
     margin-left: 140px;
+    margin-bottom: 10px;
 }
 
 .contact-us,
