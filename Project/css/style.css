@@ -721,6 +721,10 @@ p.contact-us-form-item label+*:invalid{
     text-transform: uppercase;
 }
 
+.filter-option-price{
+    margin-bottom: 60px;
+}
+
 .filter-option-price legend{
     margin-bottom: 45px;
 }
@@ -792,6 +796,47 @@ p.contact-us-form-item label+*:invalid{
 .filter-option-price span:last-of-type::after{
     content: "15000";
 }
+
+.filter-option-grid legend{
+    margin-bottom: 15px;
+}
+
+.filter-option-grid li{
+    margin-left: 36px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.filter-option-grid li label::before{
+    content: "";
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 4px #a6a6a6;
+    position: absolute;
+    left: -35px;
+
+}
+
+#grid-adaptive:checked ~ label[for="grid-adaptive"]::before{
+    background-color: #a6a6a6;
+    box-shadow: inset 0 0 0 4px #a6a6a6,
+                inset 0 0 0 8px #ffffff;
+}
+
+#grid-fixed:checked ~ label[for="grid-fixed"]::before{
+    background-color: #a6a6a6;
+    box-shadow: inset 0 0 0 4px #a6a6a6,
+                inset 0 0 0 8px #ffffff;
+}
+
+#grid-rubber:checked ~ label[for="grid-rubber"]::before{
+    background-color: #a6a6a6;
+    box-shadow: inset 0 0 0 4px #a6a6a6,
+                inset 0 0 0 8px #ffffff;
+}
+
 
 .sorting-list-option a{
     color: #000000;
