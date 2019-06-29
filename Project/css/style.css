@@ -721,6 +721,78 @@ p.contact-us-form-item label+*:invalid{
     text-transform: uppercase;
 }
 
+.filter-option-price legend{
+    margin-bottom: 45px;
+}
+
+.filter-option-range{
+    width: 220px;
+    height: 41px;
+    background-color: #eeeeee;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 39px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.range-line{
+    height: 2px;
+    background: linear-gradient(to right, #00ca74 67%, #c2c2c2 67%);
+    position: relative;
+}
+
+.range-line::before,
+.range-line::after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #c2c2c2;
+    box-shadow: inset 0 0 0 8px #ffffff;
+    position: absolute;
+    border-radius: 50%;
+    top: -9px;
+}
+
+.range-line::before{
+    left: -10px;
+}
+
+.range-line::after{
+    right: 65px;
+}
+
+.filter-option-price span{
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+.filter-option-price span:first-of-type{
+    margin-right: 124px;
+}
+
+.filter-option-price span::after{
+    content: "";
+    width: 80px;
+    height: 30px;
+    background-color: #eeeeee;
+    position: absolute;
+    border-radius: 2px;
+    top: -7px;
+    left: 32px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.filter-option-price span:first-of-type::after{
+    content: "0";
+}
+
+.filter-option-price span:last-of-type::after{
+    content: "15000";
+}
+
 .sorting-list-option a{
     color: #000000;
     opacity: 0.3;
@@ -942,6 +1014,7 @@ p.contact-us-form-item label+*:invalid{
 .inner-page{
     background-image: url(../img/nerds-catalog.jpg);
     background-repeat: no-repeat;
+    margin: 0;
 }
 
 .inner-page .container{
@@ -949,12 +1022,10 @@ p.contact-us-form-item label+*:invalid{
 }
 
 .page-name-wrapper{
-    min-height: 180px;
-    padding-bottom: 40px;
+    min-height: 150px;
+    padding-top: 90px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     font-size: 28px;
     
 }
