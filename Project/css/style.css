@@ -797,6 +797,10 @@ p.contact-us-form-item label+*:invalid{
     content: "15000";
 }
 
+.filter-option-grid{
+    margin-bottom: 30px;
+}
+
 .filter-option-grid legend{
     margin-bottom: 15px;
 }
@@ -839,8 +843,10 @@ p.contact-us-form-item label+*:invalid{
     opacity: 0.4;
 }
 
+
+
 #grid-adaptive:checked ~ label[for="grid-adaptive"]:hover::before,
-#grid-adaptive:checked ~ label[for="grid-adaptive"]:focus::before{
+#grid-adaptive:checked ~ label[for="grid-adaptive"]:focus{
     opacity: 1;
 }
 
@@ -870,7 +876,7 @@ p.contact-us-form-item label+*:invalid{
 }
 
 #grid-fixed:checked ~ label[for="grid-fixed"]:hover::before,
-#grid-fixed:checked ~ label[for="grid-fixed"]:focus::before{
+#grid-fixed:checked ~ label[for="grid-fixed"]:focus{
     opacity: 1;
 }
 
@@ -900,7 +906,7 @@ p.contact-us-form-item label+*:invalid{
 }
 
 #grid-rubber:checked ~ label[for="grid-rubber"]:hover::before,
-#grid-rubber:checked ~ label[for="grid-rubber"]:focus::before{
+#grid-rubber:checked ~ label[for="grid-rubber"]:focus{
     opacity: 1;
 }
 
@@ -921,6 +927,66 @@ p.contact-us-form-item label+*:invalid{
 #grid-rubber:checked:disabled ~ label[for="grid-rubber"]::before{
     opacity: 0.3;
 }
+
+.filter-option-features{
+    margin-bottom: 50px;
+}
+
+.filter-option-features legend{
+    margin-bottom: 12px;
+}
+
+.filter-option-features li{
+    margin-left: 35px;
+    position: relative;
+   
+}
+
+.filter-option-features li:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.filter-option-features li label::before{
+    content: "";
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    background-image:url(../img/checkbox-off.svg) ;
+    background-repeat: no-repeat;
+    left: -34px;
+    top: 1px;
+    opacity: 0.4;
+}
+
+
+
+.filter-input-checkbox:checked ~ label::before{
+    content: "";
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    background-image:url(../img/checkbox-on.svg) ;
+    background-repeat: no-repeat;
+    left: -34px;
+    top: 1px;
+    opacity: 0.4;
+}
+
+.filter-option-features li label:hover::before,
+.filter-option-features li label:hover{
+    opacity: 1;
+    color: #000000;
+}
+
+.filter-input-checkbox:disabled ~ label::before,
+.filter-input-checkbox:disabled ~ label,
+.filter-input-checkbox:disabled ~ label:hover::before,
+.filter-input-checkbox:disabled ~ label:hover{
+    opacity: 0.3;
+    color:inherit;
+}
+
+
 
 .sorting-list-option a{
     color: #000000;
@@ -955,6 +1021,8 @@ p.contact-us-form-item label+*:invalid{
     background-color: #eeeeee;
     border-radius: 2px;
     border: none;
+
+    width: 100%;
 }
 
 .gray-button:hover,
@@ -1141,7 +1209,7 @@ p.contact-us-form-item label+*:invalid{
 /*Сетка для внутреней странциы каталога*/
 
 .inner-page{
-  /*background-image: url(../img/nerds-catalog.jpg);*/
+  background-image: url(../img/nerds-catalog.jpg);
     background-repeat: no-repeat;
     margin: 0;
 }
