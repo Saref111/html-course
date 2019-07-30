@@ -122,7 +122,7 @@
                 <p>NЁrds Design studio</p>
                 <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
                 <p>тел. +7 (812) 275-75-75</p>
-                <button type="button" class="button">Напишите нам</button>
+                <button type="button" class="button" id="popup-open">Напишите нам</button>
             </div>
         </div>
         <div class="contacts-2">
@@ -137,7 +137,7 @@
             </div>
         </div>
     </footer>
-    <section class="contact-us">
+    <section class="contact-us visually-hidden">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p class="contact-us-text">Напишите нам</p>
         <form class="contact-us-form" method="POST" action="http://echo.htmlacademy.ru">
@@ -155,7 +155,21 @@
             </p>
             <button class="button" type="submit">Отправить</button>
         </form>
-        <button type="button" class="close" aria-label="Закрыть"></button>
+        <button type="button" id="popup-close" aria-label="Закрыть"><img src="../Project/img/close-cross.svg" alt="Закрыть"></button>
     </section>
+    <script type="text/javascript">
+    var popup = document.querySelector('.contact-us');
+    var openButton = document.querySelector('#popup-open');
+    var closeButton = document.querySelector('#popup-close');
+
+    openButton.addEventListener('click', function(){
+        popup.classList.remove('visually-hidden');
+    })
+
+    closeButton.addEventListener('click', function(){
+        popup.classList.add('visually-hidden');
+    })
+    
+    </script>
 </body>
 </html>

@@ -709,6 +709,24 @@ p.contact-us-form-item label + *:invalid {
   border: none;
 }
 
+.contact-us>button{
+  background-color: #ffffff;
+  border: none;
+  position: absolute;
+  top: 85px;
+  right: 100px;
+  opacity: 0.3;
+}
+
+.contact-us>button:hover,
+.contact-us>button:focus{
+  opacity: 1;
+}
+
+.contact-us>button:active{
+  opacity: 0.1;
+}
+
 /*Страница каталога товаров*/
 /*Фильтры*/
 .filter-option {
